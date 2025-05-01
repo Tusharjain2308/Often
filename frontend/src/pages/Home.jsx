@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetch("http://localhost:5000/api/itineraries")
+    fetch("https://often.onrender.com/api/itineraries")
       .then((res) => res.json())
       .then((data) => {
         setItineraries(data)

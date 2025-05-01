@@ -40,7 +40,7 @@ const CreateItinerary = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await fetch("http://localhost:5000/api/itineraries", {
+      await fetch("https://often.onrender.com/api/itineraries", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

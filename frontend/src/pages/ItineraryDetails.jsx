@@ -10,7 +10,7 @@ const ItineraryDetails = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/itineraries/${id}`)
+    fetch(`https://often.onrender.com/api/itineraries/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setItinerary(data)
